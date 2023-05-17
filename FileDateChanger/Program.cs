@@ -98,7 +98,7 @@ namespace FileDateChanger
                         Console.Write("Time:");
                     } while (!TimeSpan.TryParse(Console.ReadLine(), out time));
                     Console.WriteLine();
-                    date.Add(time);
+                    date = date.Add(time);
 
                     //apply date change
                     for (int i = 0; i < files.Length; i++)
